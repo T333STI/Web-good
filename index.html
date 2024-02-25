@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/jfD0r9W/logo.png">
+    <title>TesT.sex</title>
+    <style>
+        /* Overlay styles */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        /* Hide the overlay by default */
+        #overlay.hidden {
+            display: none;
+        }
+
+        /* Video styles */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        /* Adjustments to container */
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <!-- Replace the source URL with your own video -->
+        <source src="https://cdn.discordapp.com/attachments/1208627331443204150/1211193329480634378/Why_are_they_staring_.mp4?ex=65ed4eb0&is=65dad9b0&hm=3e3fd78165fbe5f51071600566d54806d1b42d1b5a41fe445cb717f806a4fa34&" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio id="background-audio" loop>
+        <!-- Replace the source URL with your own audio -->
+        <source src="https://cdn.discordapp.com/attachments/1208627331443204150/1211196274636890152/Y2meta.app_-_Gallowdance_-_lebanon_hanover_Fixed_version_of_vladnerq_remix_128_kbps.mp3?ex=65ed516e&is=65dadc6e&hm=08d7c4b328d144b149bcc69807fb2de9574b15240893cee4c341820f7fe277d7&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="overlay">
+        Click to enter
+    </div>
+    <main>
+        <div class="container">
+            <div class="profile-container">
+                <div class="card">
+                    <div class="pfp">
+                        <img src="https://media1.tenor.com/m/6tB44xFjjyEAAAAC/lil-peep.gif">
+                    </div>
+                    <div class="username">
+                        <!-- USERNAME -->
+                        <a>TesT</a>
+                    </div>
+                </div>
+                <div class="links-container">
+                    <div class="links">
+                        <div class="link" id="connection">
+                            <p>twitter</p>
+                            <div class="link-content">
+                                <h4>T33EST</h4>
+                                <a href="https://twitter.com/YiYXXXYIY" target="_blank">
+                                    <div class="tooltip" data-text="View Link">
+                                        <svg width="20px" height="20px" viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="link" id="connection">
+                            <p>Website</p>
+                            <div class="link-content">
+                                <h4>soon</h4>
+                                <a href="https://www.youtube.com/channel/UCQxctxsCwEltwGAKVU24tXA" target="_blank">
+                                    <div class="tooltip" data-text="View Link">
+                                        <svg width="20px" height="20px" viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="link" id="connection">
+                            <p>Github</p>
+                            <div class="link-content">
+                                <h4>TezT2</h4>
+                                <a href="https://github.com/T333STI" target="_blank">
+                                    <div class="tooltip" data-text="View Link">
+                                        <svg width="20px" height="20px" viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Overlay control
+        const overlay = document.getElementById("overlay");
+        const audio = document.getElementById("background-audio");
+
+        overlay.addEventListener("click", () => {
+            overlay.classList.add("hidden");
+            audio.play();
+        });
+    </script>
+</body>
+
+</html>
